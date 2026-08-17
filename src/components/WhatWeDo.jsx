@@ -2,21 +2,6 @@ import React from 'react';
 import './WhatWeDo.css';
 
 const WhatWeDo = () => {
-  const scrollToSection = (e, sectionId) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   return (
     <section id="whatwedo" className="whatwedo-section">
       <div className="container">
